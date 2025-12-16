@@ -1,5 +1,7 @@
 # Apex Solutions – Site vitrine Express/EJS
 
+Link :https://express-routing-checkpoint-rose.vercel.app/
+
 Application Express qui sert trois pages (Accueil, Nos services, Contactez-nous) avec EJS et Tailwind CDN.
  Un middleware contrôle l’accès : le site n’est disponible que du lundi au vendredi, de 9h à 17h (heure du serveur).
 
