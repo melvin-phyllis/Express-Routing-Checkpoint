@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tailwind CDN + Express</title>
+  <!-- Tailwind CDN officiel -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+<body class="bg-gray-100 ">
+<%- include("components/header") -%>
+
+
+    <section class="heroSection  ">
+      <div class="bg-red-500 h-[300px] relative w-full">
+        <img src="/istockphoto-2094337676-1024x1024.jpg" alt="" class="w-full object-cover h-full absolute">
+        <div class="absolute px-60 flex-col  w-full h-full flex justify-center items-start space-y-10">
+
+          <h1 class="text-white text-6xl font-bold">Contactez-nous</h1>
+
+          <p class="text-gray-100 text-xl">
+            Nous sommes la pour vous aider.N'hesitez pas a nous contacter pour toute question ou demande d'information
+          </p>
+
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="flex gap-5   px-60 mt-20">
+        <div class="w-full ">
+          <form action="/api/sendmail" method="post">
+            <div class="flex flex-col gap-3">
+              <div class="flex gap-5">
+                <div class="flex flex-col">
+                  <label for="name-firstname">Nom et Prenom</label>
+                  <input type="text" class="p-2" name="name-firstname">
+                </div>
+
+                <div class="flex flex-col">
+                  <label for="email">Adresse Email</label>
+                  <input type="text" class="p-2" name="email">
+                </div>
+              </div>
+
+              <div class="flex flex-col">
+                <label for="Sujet">Sujet</label>
+                <input type="text" class="p-3" name="sujet">
+              </div>
+              <div class="flex flex-col">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="5" class="p-5" name="message">
+
+                </textarea>
+              </div>
+
+              <button type="submit"
+                class=" items-start text-2xl font-bold p-2 rounded  flex bg-orange-400 text-white mx-auto">Envoyer</button>
+            </div>
+          </form>
+        </div>
+        <div class="w-1/2 flex justify-around flex-col bg-gray-100">
+          <div class="flex flex-col">
+            <span>Email</span>
+            <span>youmailkou@gmail.com</span>
+          </div>
+
+          <div class="flex flex-col">
+            <span>Telephone</span>
+            <span>+33 01011010</span>
+          </div>
+
+          <div class="flex flex-col">
+            <span>Adress</span>
+            <span>Abidjan</span>
+          </div>
+        </div>
+      </div>
+    </section>
+     <%- include("components/footer") -%>
+</body>
+
+</html>

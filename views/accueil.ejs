@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tailwind CDN + Express</title>
+  <!-- Tailwind CDN officiel -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+<body class="bg-gray-100 ">
+
+  <%- include("components/header") -%>
+
+
+    <section class="heroSection  ">
+      <div class="bg-red-500 h-[700px] relative w-full">
+        <img src="/istockphoto-2094337676-1024x1024.jpg" alt="" class="w-full object-cover h-full absolute">
+        <div class="absolute px-60 flex-col  w-full h-full flex justify-center items-start space-y-10">
+          <h1 class="text-white text-6xl font-bold">Transformez Votre <br>Entreprise avec Nos<br> Solutions</h1>
+          <p class="text-gray-100 text-xl">
+            Decouvrez des outils innovantz pour booster votre productivité et<br>
+            atteindre vos objectifs. Commencez des aujourd'hui
+          </p>
+
+          <button class="p-5 bg-orange-400 font-semibold text-2xl rounded text-white">Commencez Maintenant</button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h1 class="text-4xl font-bold text-center my-10">Pourquoi nous choisir</h1>
+      <div class="grid grid-cols-3 sapce-x-4 px-60">
+        <div class="border p-5">
+          <div class="flex flex-col space-y-3">
+            <span class="font-bold text-xl">Efficacite Prouvée</span>
+            <span class="text-gray-700 ">
+              Decouvrez des outils innovants pour optimiser
+              vos processus et gagner un temps precieux au quotidien
+            </span>
+          </div>
+        </div>
+        <div class="border p-5">
+          <div class="flex flex-col space-y-3">
+            <span class="font-bold text-xl">Efficacite Prouvée</span>
+            <span class="text-gray-700 ">
+              Decouvrez des outils innovants pour optimiser
+              vos processus et gagner un temps precieux au quotidien
+            </span>
+          </div>
+        </div>
+        <div class="border p-5">
+          <div class="flex flex-col space-y-3">
+            <span class="font-bold text-xl">Efficacite Prouvée</span>
+            <span class="text-gray-700 ">
+              Decouvrez des outils innovants pour optimiser
+              vos processus et gagner un temps precieux au quotidien
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <%- include("components/footer") -%>
+</body>
+
+</html>
