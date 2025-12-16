@@ -49,4 +49,3 @@ curl -X POST http://localhost:3500/api/sendmail \
 
 ## Notes
 - Tailwind est chargé via CDN dans chaque vue (pas de build nécessaire).
-- La dépendance `expres` dans `package.json` est probablement une coquille et peut être supprimée en toute sécurité.
